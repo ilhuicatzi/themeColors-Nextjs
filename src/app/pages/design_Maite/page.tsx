@@ -1,7 +1,6 @@
 
 import style from "@/styles/design_Maite.module.css";
 import Image from "next/image";
-// Supports weights 300-700
 import '@fontsource-variable/quicksand';
 import ButtonLanding from "@/components/marerial/ButtonLanding";
 
@@ -18,7 +17,7 @@ function DesignMaitePage() {
           <div className="flex justify-start items-center gap-8 mt-10 mb-8">
             <button className={style.button1}>Get Started</button>
             <div className={style.button2}>
-            <ButtonLanding path="/pages/design_Lexus/landingPageLexus" />
+            <ButtonLanding path={"/pages/design_Lexus/landingPageLexus"} />
             </div>
           </div>
         </article>

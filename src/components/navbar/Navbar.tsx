@@ -1,28 +1,44 @@
 "use client";
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 import Link from "next/link";
-import { usePathname } from "next/navigation"
-import { changeTheme } from "@/utils/changeTheme";
+import { usePathname } from "next/navigation";
+import { useTheme } from "@/contexts/themeProvider";
+
+const layoutThemes = {
+  "/pages/design_Maite": "Maite",
+  "/pages/design_Natural": "Natural",
+  "/pages/design_Street": "Street",
+  "/pages/design_Lexus": "Lexus",
+};
 
 function Navbar() {
-
   const path = usePathname();
-  const [open, setOpen] = useState(false);
+  const { theme, changeTheme } = useTheme();
+  const [selectedLayout, setSelectedLayout] = useState("default");
+  const layoutThemes: { [key: string]: string } = {
+    "/pages/design_Maite": "Maite",
+    "/pages/design_Natural": "Natural",
+    "/pages/design_Street": "Street",
+    "/pages/design_Lexus": "Lexus",
+  };
 
-  if (path === "/pages/design_Maite") {
-    changeTheme("maite");
-  } else if (path === "/pages/design_Natural") {
-    changeTheme("natural");
-  } else if (path === "/pages/design_Street") {
-    changeTheme("street");
-  }  else if (path === "/pages/design_Lexus") {
-    changeTheme("lexus");
-  }  else {
-    changeTheme("default");
-  }
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const layoutTheme = layoutThemes[path] || "default";
+    setSelectedLayout(layoutTheme);
+    changeTheme(layoutTheme);
+  }, [path, changeTheme]);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav className="flex justify-between items-center px-10 p-3 shadow-md bg-color-1">
@@ -32,58 +48,37 @@ function Navbar() {
       <ul className="flex items-center gap-12">
         <li>
           <button
-            className={`flex items-center gap-1 border border-color-2 px-3 py-1 rounded-md hover:bg-color-2 ${open===true ? "bg-color-2" : ""} ` }
-            onClick={() => {
-              setOpen(!open);
-            }}
+            className={`flex items-center gap-1 border border-color-2 px-3 py-1 rounded-md hover:bg-color-2 ${
+              isMenuOpen ? "bg-color-2" : ""
+            }`}
+            onClick={toggleMenu}
           >
             Diseños
             <MdOutlineKeyboardArrowDown />
           </button>
           <span className="relative flex flex-col">
-            {open && (
-              <ul className="shadow-md shadow-color-5 bg-color-1 absolute w-48 rounded-md top-1 left-14 ">
-                <button className="absolute w-full mb-10 flex justify-end">
+            {isMenuOpen && (
+              <ul className="shadow-md shadow-color-5 bg-color-1 absolute w-48 rounded-md top-1 left-10">
+                <button className=" w-full flex justify-end ">
                   <RxCross1
-                  className="rounded-full hover:bg-color-4 hover:text-color-1 p-1 cursor-pointer w-6 h-6"
-                    onClick={() => {
-                      setOpen(false);
-                    }}
+                    className="rounded-full hover:bg-color-4 hover:text-color-1 p-1 cursor-pointer w-6 h-6"
+                    onClick={closeMenu}
                   />
                 </button>
-                <Link href="/pages/design_Maite"
-                  onClick={() => {
-                    setOpen(false);
-                  }}
-                >
-                  <li className="mt-5 hover:bg-color-2 px-2 py-1 text-center">
-                    Maite
-                  </li>
-                </Link>
-                <Link href="/pages/design_Natural"
-                onClick={() => {
-                  setOpen(false);
-                }}>
-                  <li className="hover:bg-color-2 px-2 py-1 text-center">
-                    Natural
-                  </li>
-                </Link>
-                <Link href="/pages/design_Street"
-                onClick={() => {
-                  setOpen(false);
-                }}>
-                  <li className="hover:bg-color-2 px-2 py-1 text-center">
-                    Street
-                  </li>
-                </Link>
-                <Link href="/pages/design_Lexus"
-                onClick={() => {
-                  setOpen(false);
-                }}>
-                  <li className="hover:bg-color-2 px-2 py-1 text-center">
-                    Lexus
-                  </li>
-                </Link>
+                {Object.entries(layoutThemes).map(
+                  ([layoutPath, layoutTheme]) => (
+                    <Link href={layoutPath} key={layoutPath}>
+                      <li
+                        className={`hover:bg-color-2 px-2 py-1 text-center ${
+                          selectedLayout === layoutTheme ? "font-bold" : ""
+                        }`}
+                        onClick={closeMenu}
+                      >
+                        {layoutTheme}
+                      </li>
+                    </Link>
+                  )
+                )}
               </ul>
             )}
           </span>

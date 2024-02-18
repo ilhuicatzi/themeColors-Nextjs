@@ -8,6 +8,7 @@ export const changeTheme = (theme: string) => {
   }
 
   const root = document.documentElement;
+  
   const themes: Record<string, Theme> = {
     default: {
       "--color-1": "#f2f2f2",

@@ -34,6 +34,7 @@ function Homepage() {
             width={400}
             height={400}
             alt="Colores"
+            priority={true}
           />
         </div>
       </header>

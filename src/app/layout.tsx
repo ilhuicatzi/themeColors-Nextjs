@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
+import { ThemeProvider } from "@/contexts/themeProvider";
 
 export const metadata: Metadata = {
   title: "Mis Colores",
@@ -15,8 +16,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-          <Navbar />
-          {children}
+          <ThemeProvider>
+            <Navbar />
+            {children}
+          </ThemeProvider>
       </body>
     </html>
   );

@@ -17,7 +17,7 @@ function DesignLexusPage() {
           <div className="flex justify-start items-center gap-8 mt-10 mb-8">
             <button className={style.button1}>Get Started</button>
             <div className={style.button2}>
-            <ButtonLanding path="/pages/design_Lexus/landingPageLexus" />
+            <ButtonLanding path={"/pages/design_Lexus/landingPageLexus"} />
             </div>
           </div>
         </article>

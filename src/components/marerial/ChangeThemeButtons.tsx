@@ -6,7 +6,7 @@ export default function ChangeThemeButtons() {
   
   return (
    <div className='my-10 grid place-items-center lg:grid-cols-5 md:grid-cols-3 grid-cols-5 bg-color-1'>
-      <button className=' py-2 px-4 text-color-5 m-1 text-sm rounded-full border-transparent border-2 hover:border-neutral-200' onClick={() => changeTheme("")}>
+      <button className=' py-2 px-4 text-color-5 m-1 text-sm rounded-full border-transparent border-2 hover:border-neutral-200' onClick={() => changeTheme("default")}>
         <Image className="rounded-full w-10 h-10" src="/img/themes/default-colors-img.png" width={60} height={60} alt="Colores" />
         <span>
           Default
