@@ -10,7 +10,7 @@ function LandingPageLexus() {
           <figure>
             <Image
               className="rounded-md aspect-auto w-96"
-              src="/img/Landing_Lexus_Gym.jpg"
+              src="https://res.cloudinary.com/dtgxrnxer/image/upload/v1708289741/img/Landing_Lexus_Gym_o3yy1v.jpg"
               alt="Lexus"
               width={400}
               height={400}
@@ -90,7 +90,7 @@ function LandingPageLexus() {
         <figure>
           <Image
             className="rounded-md aspect-auto w-96"
-            src="/img/Landing_Lexus_2.jpg"
+            src="https://res.cloudinary.com/dtgxrnxer/image/upload/v1708289742/img/Landing_Lexus_2_oikwfa.jpg"
             alt="Lexus"
             width={400}
             height={400}
@@ -118,7 +118,7 @@ function LandingPageLexus() {
         <figure>
           <Image
             className="rounded-md aspect-auto w-96"
-            src="/img/Landing_Lexus_3.jpg"
+            src="https://res.cloudinary.com/dtgxrnxer/image/upload/v1708289742/img/Landing_Lexus_3_cie1g2.jpg"
             alt="Lexus"
             width={400}
             height={400}
@@ -149,7 +149,7 @@ function LandingPageLexus() {
             <figure>
               <Image
                 className="rounded-md aspect-auto w-64"
-                src="/img/Lexus_1.jpg"
+                src="https://res.cloudinary.com/dtgxrnxer/image/upload/v1708289741/img/Landing_Lexus_Gym_o3yy1v.jpg"
                 alt="Lexus"
                 width={300}
                 height={300}

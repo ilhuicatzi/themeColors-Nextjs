@@ -25,7 +25,7 @@ function DesignMaitePage() {
           <figure>
             <Image
               className="rounded-md aspect-auto w-80 h-[450px]"
-              src="/img/Lexus_logo.jpg"
+              src="https://res.cloudinary.com/dtgxrnxer/image/upload/v1708289742/img/Maite_logo_mkfebt.jpg"
               alt="Lexus"
               width={400}
               height={400}

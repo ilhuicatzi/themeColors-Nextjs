@@ -30,7 +30,7 @@ function Homepage() {
         <div className="p-10 mx-4 bg-color-2 rounded-lg flex justify-center items-center ">
           <Image
             className="rounded-lg"
-            src="/img/home_logo.jpg"
+            src="https://res.cloudinary.com/dtgxrnxer/image/upload/v1708289742/img/home_logo_cbcmkk.jpg"
             width={400}
             height={400}
             alt="Colores"
