@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-1: #f2f2f2;
+  --color-2: #3D90D9;
+  --color-3: #0554F2;
+  --color-4: #034AA6;
+  --color-5: #0d0d0d;
+
+  --color-1Lexus: #fafafa;
+  --color-2Lexus: #d9d9d9;
+  --color-3Lexus: #595959;
+  --color-4Lexus: #262626;
+  --color-5Lexus: #0d0d0d;
+
+  --color-1Maite: #f2f2f2;
+  --color-2Maite: #bfbfbf;
+  --color-3Maite: #731f2e;
+  --color-4Maite: #727372;
+  --color-5Maite: #0d0d0d;
+
+  --color-5Natural: #232625;
+  --color-4Natural: #35403a;
+  --color-3Natural: #4c594f;
+  --color-2Natural: #a4a69c;
+  --color-1Natural: #bfbfb8;
+
+  --color-1Street: #f2f2f2;
+  --color-2Street: #6ba7bf;
+  --color-3Street: #d9415d;
+  --color-4Street: #96250c;
+  --color-5Street: #325283; 
+
+  --font-onest: 'Onest', sans-serif;
+}

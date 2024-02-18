@@ -1,0 +1,462 @@
+
+.container1 {
+  font-family: 'Playfair Display Variable', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 80px;
+  background-color: var(--color-1Lexus);
+  padding-top: 100px;
+  padding-bottom: 400px;
+}
+
+.fontFamily {
+  font-family: 'Playfair Display Variable', serif;
+}
+
+.containerSeparator1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 80px;
+  background-color: var(--color-2Lexus);
+  width: 100%;
+  border: none;
+}
+
+.containerWhite {
+  font-family: 'Playfair Display Variable', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 60px 80px;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 300px;
+}
+
+.container2 {
+  font-family: 'Playfair Display Variable', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 80px;
+  background-color: var(--color-2Lexus);
+  width: 100%;
+}
+
+.h1{
+  font-size: 4rem/* 64px */;
+  line-height: 1;
+  font-weight: 700;
+  padding-bottom: 2rem/* 32px */;
+  padding-top: 1rem/* 16px */;
+}
+
+.h2 {
+  font-size: 2.8rem/* 44px */;
+  line-height: 2.5rem/* 40px */;
+  padding-bottom: 1.5rem/* 24px */;
+  font-weight: 500;
+}
+
+.h3 {
+  font-size: 1.5rem/* 24px */;
+  line-height: 2rem/* 32px */;
+  font-weight: 500;
+  padding-bottom: 1rem/* 16px */;
+}
+
+.h4 {
+  font-size: 1.25rem/* 20px */;
+  line-height: 1.75rem/* 28px */;
+  font-weight: 500;
+}
+
+.h5 {
+  font-size: 1rem/* 16px */;
+  line-height: 1.5rem/* 24px */;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 1rem/* 16px */;
+  line-height: 1.5rem/* 24px */;
+  font-weight: 400;
+}
+
+.text2 {
+  font-size: 0.875rem/* 14px */;
+  line-height: 1.25rem/* 20px */;
+  font-weight: 400;
+}
+
+.text3 {
+  font-size: 0.75rem/* 12px */;
+  line-height: 1rem/* 16px */;
+  font-weight: 400;
+}
+
+.text4 {
+  font-size: 0.625rem/* 10px */;
+  line-height: 0.75rem/* 12px */;
+  font-weight: 400;
+}
+
+.subtitle{
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-5Lexus);
+  padding: 10px 0;
+}
+
+.card1{
+  background-color: var(--color-1Lexus);
+  padding: 28px;
+  width: 600px;
+}
+
+.card2{
+  display: flex;
+  background-color: var(--color-4Lexus);
+  color: var(--color-2Lexus);
+  padding: 60px 40px;
+  gap: 30px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.color1{
+  color: var(--color-5Lexus);
+  width: 140px;
+  height: 320px;
+  background-color: var(--color-1Lexus);
+}
+
+.color2{
+  color: var(--color-5Lexus);
+  width: 140px;
+  height: 320px;
+  background-color: var(--color-2Lexus);
+}
+
+.color3{
+  color: var(--color-5Lexus);
+  width: 140px;
+  height: 320px;
+  background-color: var(--color-3Lexus);
+}
+
+.color4{
+  color: var(--color-1Lexus);
+  width: 140px;
+  height: 320px;
+  background-color: var(--color-4Lexus);
+}
+
+.color5{
+  color: var(--color-1Lexus);
+  width: 140px;
+  height: 320px;
+  background-color: var(--color-5Lexus);
+}
+
+.button1{
+  background-color: var(--color-3Lexus);
+  color: var(--color-1Lexus);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button1:hover{
+  background-color: var(--color-5Lexus);
+  color: var(--color-1Lexus);
+  text-decoration: underline;
+}
+
+
+.button2{
+  background-color: var(--color-1Lexus);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button2:hover{
+  background-color: var(--color-2Lexus);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.button3{
+  background-color: var(--color-5Lexus);
+  color: var(--color-1Lexus);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button3:hover{
+  background-color: #000000;
+  color: var(--color-1Lexus);
+}
+
+.button4{
+  background-color: var(--color-1Lexus);
+  color: var(--color-5Lexus);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button4:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button5{
+  background-color: black;
+  color: var(--color-1Lexus);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button5:hover{
+  background-color: var(--color-5Lexus);
+  color: white;
+  text-decoration: underline;
+}
+
+.button6{
+  background-color: var(--color-3Lexus);
+  color: var(--color-1Lexus);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button6:hover{
+  background-color: var(--color-2Lexus);
+  color: var(--color-1Lexus);
+}
+
+
+
+.input1 {
+  border: 2px solid var(--color-2Lexus);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.input1:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: var(--color-5Lexus)
+}
+
+.input2 {
+  border: 2px solid var(--color-3Lexus);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.input2:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: var(--color-4Lexus)
+}
+
+.input3 {
+  border: 2px solid var(--color-4Lexus);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.input3:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: var(--color-5Lexus)
+}
+
+.input4 {
+  border: 2px solid var(--color-2Lexus);
+  background-color: var(--color-1Lexus);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.input4:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: var(--color-5Lexus)
+}
+
+.input5 {
+  border: 2px solid var(--color-3Lexus);
+  background-color: var(--color-1Lexus);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.input5:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: var(--color-4Lexus)
+}
+
+.input6 {
+  border: 2px solid var(--color-5Lexus);
+  background-color: var(--color-1Lexus);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.input6:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: black;
+}
+
+.box1{
+  background-color: var(--color-1Lexus);
+  color: var(--color-5Lexus);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.box1:hover{  
+  cursor: pointer;
+  transition: 0.3s;
+  scale: 1.02;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box2{
+  background-color: var(--color-2Lexus);
+  color: var(--color-5Lexus);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.box2:hover{  
+  cursor: pointer;
+  transition: 0.3s;
+  scale: 1.02;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box3{
+  background-color: var(--color-3Lexus);
+  color: var(--color-1Lexus);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.box3:hover{  
+  cursor: pointer;
+  transition: 0.3s;
+  scale: 1.02;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box4{
+  background-color: var(--color-4Lexus);
+  color: var(--color-1Lexus);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.box4:hover{  
+  cursor: pointer;
+  transition: 0.3s;
+  scale: 1.02;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box5{
+  background-color: var(--color-5Lexus);
+  color: var(--color-1Lexus);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.box5:hover{  
+  cursor: pointer;
+  transition: 0.3s;
+  scale: 1.02;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box6{
+  background-color: black;
+  color: var(--color-1Lexus);
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.box6:hover{  
+  cursor: pointer;
+  transition: 0.3s;
+  scale: 1.02;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
